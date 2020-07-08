@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+/* -- Layout Section -- */
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    margin: auto;
+}
+
+body {
+    line-height: 1.2;
+    letter-spacing: 5px;
+    font-variant: small-caps;
+    
+    background-color: rgba(122, 109, 105, 0.322); 
+}
+
+/* -- Navigation Bar / Header -- */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    
+    font-size: 40px;
+    text-transform: uppercase;
+
+    color: white;
+    background-color: coral;
+}
+
+nav ul li {
+    padding: 10px 25px 10px 0px;
+    font-size: 16px;
+    
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    
+    color:white;
+}
+
+nav a:hover {
+    background-color: teal;
+} 
+
+nav a:active {
+    background-image: linear-gradient(teal, lightblue);
+}
+
+.current {
+    background-image: linear-gradient(teal, lightblue);
+}
+
+/* -- Login Form -- */
+
+.login {
+    height: 70vh;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 450px;
+
+    margin-top: 100px;
+    margin-bottom: 250px;
+    padding: 1.5em;
+    
+    border-radius: 1em;
+    border: 5px solid teal;
+
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+   
+    color: black;
+    background-color: rgba(122, 109, 105, 0.13); 
+}
+
+legend {
+   font-size: 25px;
+   text-align: center;
+}
+
+label {
+    display: inline-block;
+    text-align: right;
+    margin: 10px;
+    padding-top: 15px;
+    
+    font-size: 18px;
+}
+
+#mail {
+    width: 200px;
+}
+
+input, textarea { 
+    width:  160px; 
+    height: 25px;
+    
+    border: 1 px solid #999;
+} 
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+button {
+    padding: 10px;
+
+    color:white;
+    background-color: coral;
+}
+
+/* -- Footer -- */
+
+footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    overflow: hidden;
+
+	font-size: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+
+	color:white;
+	background: coral
+} 
