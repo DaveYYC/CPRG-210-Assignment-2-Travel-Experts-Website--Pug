@@ -37,12 +37,12 @@
         <script>
 
             const imgList = [ 
-            [2193300,"Germany"],
-            [7004,""],
-            [3038815,""],
-            [1144276,""],
-            [3763903,""],
-            [338515,""]
+            [2193300,"Germany", "https://germany.travel/en/index.html"],
+            [7004,"Test a"],
+            [3038815,"Test b"],
+            [1144276,"Test c"],
+            [3763903,"Test d"],
+            [338515,"Test e"]
 
             ];
                    
@@ -52,7 +52,7 @@
                 
             imgList.forEach(function(item){
              console.log(item);
-             imgTemplate += `<img src="https://images.pexels.com/photos/${item[0]}/pexels-photo.jpg" alt="${item[1]}">`;
+             imgTemplate += `<img src="https://images.pexels.com/photos/${item[0]}/pexels-photo.jpg" alt="${item[1]}" alt="${item[2]}">`;
             });
           
              gallery.innerHTML = imgTemplate;
