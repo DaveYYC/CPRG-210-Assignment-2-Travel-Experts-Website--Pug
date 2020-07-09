@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+
     <title>Travel Experts</title>
 </head>
 
@@ -31,14 +32,35 @@
                 <p>View our Exciting Travel Destinations Below</p>
             </div>
 
-        <div class="gallery">
-            <img src="images/pexels-photo-Australia-2193268.jpeg" alt="Photo of the Sydney Opera House" width="375" height="300">
-            <img src="images/pexels-photo-Germany-210459.jpeg" alt="Photo of German Castle" width="375" height="300">
-            <img src="images/pexels-photo-Hong-Kong-3038813.jpeg" alt="Landscape photo of Hong Kong at night" width="375" height="300">
-            <img src="images/pexels-photo-Paris-3778370.jpeg" alt="photo of Eiffel Tower" width="375" height="300">
-            <img src="images/pexels-photo-Portugal-3780224.jpeg" alt="photo of street car in Portugal" width="375" height="300">
-            <img src="images/pexels-photo-Italy-1144276.jpeg" alt="photo of Tower of Pisa in Italy" width="375" height="300">
-        </div>
+        <section class="gallery">
+
+        <script>
+
+            const imgList = [ 
+
+            'https://picsum.photos/id/28/250/250',
+            'https://picsum.photos/id/29/250/250', 
+            'https://picsum.photos/id/30/250/250',
+            'https://picsum.photos/id/31/250/250',
+            'https://picsum.photos/id/32/250/250',
+            'https://picsum.photos/id/33/250/250'
+
+            ];
+                   
+            let imgTemplate = ''; 
+                
+            const gallery = document.querySelector('.gallery'); 
+                
+            imgList.forEach(function(item){
+             console.log(item);
+                imgTemplate += `${item}`;
+            });
+                
+             gallery.innerHTML = imgTemplate;
+
+        </script>
+
+        </section>
 
         <div id="contact">Contact Us</div>
 
@@ -84,18 +106,6 @@
 </body>  
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

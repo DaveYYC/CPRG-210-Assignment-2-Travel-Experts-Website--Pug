@@ -112,20 +112,21 @@ header p {
     background-color: coral;
 }
 
+
+/*--------------------------------------------------------------------------------*/
 .gallery {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 
-	padding-bottom: 5px;
-    border: 1px solid black;
-    
-    background-color: rgba(122, 109, 105, 0.322); 
-}
+    max-width:800px;
+    margin: auto;
+  }
 
-.gallery img {
-    margin: 2px;
-}
+  .gallery img {
+    margin: 0.5em;
+  }
+
 
 /* ---- Comment Form /Contact Us Section ---- */
 .container {

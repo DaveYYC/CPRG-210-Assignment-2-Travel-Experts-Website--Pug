@@ -16,3 +16,20 @@ inputs.forEach(input => {
 /*---------------------------------------------------------*/
 
 
+
+
+
+/*-----------------Gallery Object Info---------------------*/
+[
+  {
+    id:           1,
+    title:        'Australia',
+    source:       'Pexels.com',
+    fileName:     'Pexels-photo-Australia-2193268.jpeg',
+    attribution:  {
+      source: 'Pexels.com',
+      credit: 'TBD',
+      url:  'https://unsplash.com/photos/8wTPqxlnKM4'
+    }
+  },
+]
