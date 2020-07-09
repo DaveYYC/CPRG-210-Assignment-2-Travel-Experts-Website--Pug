@@ -120,6 +120,22 @@ input, textarea {
     
     border: 1 px solid #999;
 } 
+ /* -- linked to javascript -- */
+input.error {
+    border-color: red;
+}
+/* -- works but the border is red upon page loading -- */
+
+/* input:invalid {
+    border: 2px dashed red;
+}  */
+
+/*------------------------------------------------------*/
+
+
+.required {
+    color: red;
+}
 
 .button {
     display: flex;
