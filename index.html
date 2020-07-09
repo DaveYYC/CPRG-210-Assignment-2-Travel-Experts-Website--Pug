@@ -37,13 +37,12 @@
         <script>
 
             const imgList = [ 
-
-            'https://picsum.photos/id/28/250/250',
-            'https://picsum.photos/id/29/250/250', 
-            'https://picsum.photos/id/30/250/250',
-            'https://picsum.photos/id/31/250/250',
-            'https://picsum.photos/id/32/250/250',
-            'https://picsum.photos/id/33/250/250'
+            [2193300,"Germany"],
+            [7004,""],
+            [3038815,""],
+            [1144276,""],
+            [3763903,""],
+            [338515,""]
 
             ];
                    
@@ -53,9 +52,9 @@
                 
             imgList.forEach(function(item){
              console.log(item);
-                imgTemplate += `${item}`;
+             imgTemplate += `<img src="https://images.pexels.com/photos/${item[0]}/pexels-photo.jpg" alt="${item[1]}">`;
             });
-                
+          
              gallery.innerHTML = imgTemplate;
 
         </script>
@@ -105,17 +104,29 @@
     </div>
 </body>  
 
+
+
+
+
+
+            <!-- 'https://picsum.photos/id/28/250/250',
+            'https://picsum.photos/id/29/250/250', 
+            'https://picsum.photos/id/30/250/250',
+            'https://picsum.photos/id/31/250/250',
+            'https://picsum.photos/id/32/250/250',
+            'https://picsum.photos/id/33/250/250'
+
+
+            'https://images.pexels.com/photos/2193300/pexels-photo-2193300.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+            'https://images.pexels.com/photos/7004/pexels-photo.jpg?cs=srgb&dl=bavaria-castle-germany-landmark-7004.jpg&fm=jpg',
+            'https://images.pexels.com/photos/3038815/pexels-photo-3038815.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+            'https://images.pexels.com/photos/1144276/pexels-photo-1144276.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+            'https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+            'https://images.pexels.com/photos/3763903/pexels-photo-3763903.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500'
+        https://www.pexels.com/photo/picture-of-eiffel-tower-338515/ -->
+
+
 </html>
-
-
-
-
-
-
-
-
-
-
 
 
 
