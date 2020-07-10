@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <link rel="stylesheet" type="text/css" href="css/register2.css">
     <title>Travel Experts - Register</title>
 </head>
 
@@ -12,7 +12,9 @@
         <a href="index.html"><img src="images/travel_logo.png" alt="travel experts logo" width="120" height="120"></a>
 
         <a href="index.html"><h1>Travel Experts</h1></a>
-    
+        
+        <button class="btn">Menu Toggle</button>
+
         <ul>
             <li><a href="login.html">LOGIN</a></li>
             <li><a class="current" href="register.html">SIGN UP</a></li>
@@ -43,11 +45,31 @@
                             <p>Password minimum 8 characters</p>
                 <legend>Select to subscribe to our newsletter:</legend>
                     <input type="radio" id="sub_yes" name="sub_yes" value="sub_yes">
-                        <button type="submit">SUBMIT</button>
+                <button type="submit">SUBMIT</button>
             </form>
         </div>
 
         <script src="gallery.js"></script>
+
+    <script>
+        const button = document.querySelector('.btn');
+        const menu = document.querySelector('nav ul');
+
+        function eventHandler() {
+            menu.classList.toggle('visible');
+        }
+        button.addEventListener('click', eventHandler);
+    </script>
+
+    <script>
+        const inputs = document.querySelectorAll("input");
+    
+        inputs.forEach(input => {
+            input.addEventListener("invalid",event => {
+                input.classList.add("error");},false
+            );
+         });
+    </script>
 
     <footer>Copyright &copy 2020 Travel Experts</footer>
 </body> 

@@ -13,11 +13,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
-.wrapper {
-    height: 100vh;
-    margin: auto;
-}
-
 body {
     line-height: 1.2;
     letter-spacing: 5px;
@@ -50,6 +45,14 @@ nav ul li {
     padding: 10px 25px 10px 0px;
     list-style: none;
 }
+ 
+nav ul {
+    display: none;
+  }
+
+.visible {
+    display: block;
+}
 
 nav a {
     font-size: 16px;
@@ -72,7 +75,7 @@ nav a:active {
 
 /* ---- Hero Section ---- */
 header {
-    min-height: 1000px;
+    min-height: 850px;
 
     background-image: url(https://picsum.photos/id/16/1000/1250);
 	background-position: bottom;
@@ -112,21 +115,21 @@ header p {
     background-color: coral;
 }
 
-
-/*--------------------------------------------------------------------------------*/
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+    
     max-width:800px;
     margin: auto;
+
+    font-size: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
   }
 
   .gallery img {
     margin: 0.5em;
   }
-
 
 /* ---- Comment Form /Contact Us Section ---- */
 .container {
@@ -232,4 +235,22 @@ footer {
 	color:white;
 	background: teal
 } 
+
+/* ---- Necessary for hidden menu on mobile view ---- */
+
+@media (orientation: landscape) {
+    
+    nav ul {
+      
+      display: flex;
+    }
+
+    nav ul li {
+      flex: auto;
+    }
+
+    nav button {
+      display: none;
+    }
+  }
 

@@ -17,9 +17,22 @@ Acknowledgements:
 
     Destination images courtesy of http://pexels.com
 
-    *** I could make a red border for invalid entry in CSS, however the border was red upon page loading. The script allows the border to remain black until the submit button is pressed. ***
-
     Javascript for invalid form entry red border color:
-        https://daverupert.com/2017/11/happier-html5-forms/
 
+    https://daverupert.com/2017/11/happier-html5-forms/
+
+*** I could make a red border for invalid form entries in CSS, however the border was red upon page loading. 
+The javascript allows the border to remain black until the submit button is pressed. 
+
+
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----- Optimized for viewing with the Mozilla Firefox browser -----
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+GitHub link:
+https://daveyyc.github.io/assignment_2/
+
+    
       

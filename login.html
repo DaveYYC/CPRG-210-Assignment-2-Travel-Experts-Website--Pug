@@ -3,42 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/login2.css">
     <title>Travel Experts - Login</title>
 </head>
 
 <body>
-    <div class = "wrapper">
-        <nav>
-            <a href="index.html"><img src="images/travel_logo.png" alt="travel experts logo" width="125" height="125"></a>
+    <nav>
+        <a href="index.html"><img src="images/travel_logo.png" alt="travel experts logo" width="125" height="125"></a>
         
-            <a href="index.html"><h1>Travel Experts</h1></a>
-    
-            <ul>
-                <li><a class="current" href="login.html">LOGIN</a></li>
-                <li><a href="register.html">SIGN UP</a></li>
-                <li><a href= "/assignment_1/index.html#banner_1">Destinations</a></li>
-                <li><a href="/assignment_1/index.html#contact">Contact Us</a></li>
-            </ul>
-        </nav>
+        <a href="index.html"><h1>Travel Experts</h1></a>
 
-        <div class="login">
-            <form id="login"  action="#" method="post">
-                <legend>LOGIN</legend><br>
-                    <p>Mandatory fields marked with *</p>
-                        <label for="mail">E-mail:</label> 
-                            <span class="required"> * </span>
-                                <input type="email" id="mail" name="user_email" required>    
-                        <label for="pwd">Password:</label> 
-                            <span class="required"> * </span>
-                                <input type="password" pattern=".{8,}" id="pwd" name="pwd" required title="8 characters minimum">
-                                    <p>min 8 characters</p>
+        <button class="btn">Menu Toggle</button>
+    
+        <ul>
+            <li><a class="current" href="login.html">LOGIN</a></li>
+            <li><a href="register.html">SIGN UP</a></li>
+            <li><a href= "/assignment_1/index.html#banner_1">Destinations</a></li>
+            <li><a href="/assignment_1/index.html#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="login">
+        <form id="login"  action="#" method="post">
+            <legend>LOGIN</legend><br>
+                <p>Mandatory fields marked with *</p>
+                    <label for="mail">E-mail:</label> 
+                        <span class="required"> * </span>
+                            <input type="email" id="mail" name="user_email" required>    
+                    <label for="pwd">Password:</label> 
+                        <span class="required"> * </span>
+                            <input type="password" pattern=".{8,}" id="pwd" name="pwd" required title="8 characters minimum">
+                                <p>Password minimum 8 characters</p>
                 <div class="button"><button type="submit">SUBMIT</button></div>
             </form>
-        </div>
-        <script src="gallery.js"></script>
-        <footer>Copyright &copy 2020 Travel Experts</footer>
     </div>
+    <script src="gallery.js"></script>
+    <script>
+
+        const button = document.querySelector('.btn');
+        const menu = document.querySelector('nav ul');
+    
+        function eventHandler() {
+            menu.classList.toggle('visible');
+        }
+        button.addEventListener('click', eventHandler);
+    </script>
+
+    <script>
+        const inputs = document.querySelectorAll("input");
+    
+        inputs.forEach(input => {
+            input.addEventListener("invalid",event => {
+                input.classList.add("error");},false
+            );
+         });
+    </script>
+
+    <footer>Copyright &copy 2020 Travel Experts</footer>
 </body> 
 
 </html>

@@ -12,11 +12,16 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
+.wrapper {
+    height: 100vh;
+    margin: auto;
+}
+
 body {
     line-height: 1.2;
     letter-spacing: 5px;
     font-variant: small-caps;
-
+    
     background-color: rgba(122, 109, 105, 0.322); 
 }
 
@@ -27,34 +32,53 @@ nav {
     
     align-items: center;
     justify-content: space-evenly;
-    text-align: center;
     overflow: hidden;
+
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
     
-    font-size: 28px;
+    font-size: 35px;
     text-transform: uppercase;
 
     color: white;
     background-color: coral;
-    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 nav ul li {
-    padding: 15px 20px 5px 0px;
-
-    font-size: 13px;
+    padding: 10px 25px 10px 0px;
+    font-size: 16px;
+    
     list-style: none;
 }
 
-nav a {
-    font-weight: bold;
-    text-decoration: none;
-    
-    color:white;
+nav ul {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+n
+
+nav ul li {
+    flex: auto;
+}
+
+nav button {
+    display: none;
 }
 
 nav a:hover {
-    background-image: linear-gradient(teal, lightblue);
+    background-color: teal;
 } 
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    
+    color:white;
+}
 
 nav a:active {
     background-image: linear-gradient(teal, lightblue);
@@ -64,107 +88,123 @@ nav a:active {
     background-image: linear-gradient(teal, lightblue);
 }
 
-/* ---- Registration Form ---- */
-.register {
-    height: 550px;
+/* ---- Login Form ---- */
+.login {
+    height: 70vh;
 
     display:flex;
     justify-content: center;
-    align-items: center; 
-
-    overflow: hidden;
+    align-items: center;
 }
 
 form {
     width: 450px;
+    margin-top: 250px;
+    margin-bottom: 240px;
+
+    padding: 1.5em;
     border-radius: 1em;
     border: 5px solid teal;
 
     font-family: 'Roboto', sans-serif;
-    
+    text-align: left;
+   
     color: black;
     background-color: rgba(122, 109, 105, 0.13); 
 }
 
 legend {
-    padding-top: 2px;
-    padding-bottom: 10px;
+   font-size: 25px;
+   text-align: center;
+}
 
-    text-align: center;
-    font-size: 18px;
-    font-weight: 500;
- }
-
- label {
-    margin: 7px;
+label {
+    margin: 10px;
     display: inline-block;
     
     padding-top: 15px;
     text-align: right;
     
-    font-size: 16px;
+    font-size: 18px;
 }
 
-form p {
-    padding: 5px, 0, 10px, 0;
-    
-    font-size: 12px;
-    text-align: center;
+#mail {
+    width: 200px;
 }
 
 input, textarea { 
-    width:  165px; 
+    width:  160px; 
     height: 25px;
+    padding-bottom: 10px;
     
     border: 1 px solid #999;
 } 
-
-#mail {
-    width: 255px;
+.login p {
+    margin-top: 20px;
+    text-align: center;
+   
 }
 
-/* -- linked to javascript -- */
+ /* -- linked to javascript -- */
 input.error {
     border-color: red;
 }
-
-/* -- below works, but the border is red upon page loading -- */
+/* -- works but the border is red upon page loading -- */
 
 /* input:invalid {
     border: 2px dashed red;
 }  */
 
-/*-----------------------------------------------------*/
+/*------------------------------------------------------*/
 
-span.required {
+
+.required {
     color: red;
 }
 
+.button {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
 button {
-    margin: 5px 0 15px 15px;
     padding: 10px;
 
     color:white;
     background-color: coral;
 }
-    
+
 /* ---- Footer ---- */
 footer {
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-top: 10px;
     overflow: hidden;
 
     text-align: center;
-	font-size: 16px;
+	font-size: 20px;
     font-family: 'Montserrat Alternates', sans-serif;
-   
+    
 	color:white;
 	background: coral
 } 
+
+/* ---- Necessary for hidden menu on mobile view ---- */
+
+@media (orientation: landscape) {
     
+    nav ul {
+      
+      display: flex;
+    }
 
+    nav ul li {
+      flex: auto;
+    }
 
-
-
-
+    nav button {
+      display: none;
+    }
+  }
 

@@ -3,131 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/main2.css">
 
     <title>Travel Experts</title>
 </head>
 
 <body>
-    <div class = "wrapper">
-        <nav>
-            <a href="index.html"><img src="images/travel_logo.png" alt="Travel Experts company logo" width="125" height="125"></a>
+    <nav>
+        <a href="index.html"><img src="images/travel_logo.png" alt="Travel Experts company logo" width="125" height="125"></a>
         
-            <a href="index.html"><h1>Travel Experts</h1></a>
-    
-            <ul>
-                <li><a href="login.html"><h4>LOGIN</h4></a></li>
-                <li><a href="register.html"><h4>SIGN UP</h4></a></li>
-                <li><a href="#banner_1"><h4>Destinations</h4></a></li>
-                <li><a href="#contact"><h4>Contact Us</h4></a></li>
-            </ul>
-        </nav>
+        <a href="index.html"><h1>Travel Experts</h1></a>
+
+        <button class="btn">Menu Toggle</button>
+        <ul>
+            <li><a href="login.html"><h4>LOGIN</h4></a></li>
+            <li><a href="register.html"><h4>SIGN UP</h4></a></li>
+            <li><a href="#banner_1"><h4>Destinations</h4></a></li>
+            <li><a href="#contact"><h4>Contact Us</h4></a></li>
+        </ul>
+    </nav>
   
-        <header>
-            <h1>Access our Specials and Discounts</h1>
-                <p> ----Sign Up Today!----</p>
-            </header>
+    <header>
+        <h1>Access our Specials and Discounts</h1>
+            <p> ----Sign Up Today!----</p>
+    </header>
 
-            <div id="banner_1">
-                <p>View our Exciting Travel Destinations Below</p>
-            </div>
-
-        <section class="gallery">
-
-        <script>
-
-            const imgList = [ 
-            [2193300,"Germany", "https://germany.travel/en/index.html"],
-            [7004,"Test a"],
-            [3038815,"Test b"],
-            [1144276,"Test c"],
-            [3763903,"Test d"],
-            [338515,"Test e"]
-
-            ];
-                   
-            let imgTemplate = ''; 
-                
-            const gallery = document.querySelector('.gallery'); 
-                
-            imgList.forEach(function(item){
-             console.log(item);
-             imgTemplate += `<img src="https://images.pexels.com/photos/${item[0]}/pexels-photo.jpg" alt="${item[1]}" alt="${item[2]}">`;
-            });
-          
-             gallery.innerHTML = imgTemplate;
-
-        </script>
-
-        </section>
-
-        <div id="contact">Contact Us</div>
-
-        <div class="container">
-            <form action="#" method="post">
-                <legend>Questions, Comments?</legend>
-                    <label for="name">Name:</label>
-                        <input type="text" id="name" name="user_name"> 
-                    <label for="mail">E-mail:</label>
-                        <input type="email" id="mail" name="user_email">
-                    <label for="msg">Message:</label>
-                        <textarea id="mag" name="user_message"></textarea>
-                <div class="button"><button type="submit">Send your message</button></div>
-            </form>
-        
-            <ul>
-                <h3>Calgary, Canada</h3><br>
-                <li>1613 11 Ave. SW</li>
-                <li>Calgary, AB. T3C 0N3</li>
-                <li>Reception: 403-837-7400</li>
-                <li>Manager: John Doe</li>
-                <li>J.D@edu.sait.ca</li>
-            </ul>
-            <ul>
-                <h3>New York, USA</h3><br>
-                <li>20 West 34th St.</li>
-                <li>New York, USA 10118</li>
-                <li>Reception: 212-736-3100</li>
-                <li>Manager: Sally May</li>
-                <li>S.M@edu.sait.ca</li>
-            </ul>
-            <ul>
-                <h3>London, UK.</h3><br>
-                <li>Spur Road</li>
-                <li>London,GB SW1A 1AA</li>
-                <li>Reception:44 3031237300</li>
-                <li>Manager: Peter Pi</li>
-                <li>P.P@edu.sait.ca</li>
-            </ul>
-        </div>
-        <footer>Copyright &copy 2020 Travel Experts</footer>
+    <div id="banner_1">
+        <p>View our Exciting Travel Destinations Below</p>
     </div>
-</body>  
+           
+    <section class="gallery">
+            
+        <!-- <img src="https://images.pexels.com/photos/2193300/pexels-photo-2193300.jpeg">  -->
 
+    </section>
 
+    <script>
+        const imgList = ["Australia", "Germany", "Hong-Kong", "Italy", "Portugal", "Paris"]; 
 
+        let imgTemplate = ''; 
 
+        const gallery = document.querySelector('.gallery'); 
 
+        imgList.forEach(function(item){
+            imgTemplate += item;
+            console.log(item);
+        });
+        gallery.innerHTML = imgTemplate;
+    </script>
+                
+    <div id="contact">Contact Us</div>
 
-            <!-- 'https://picsum.photos/id/28/250/250',
-            'https://picsum.photos/id/29/250/250', 
-            'https://picsum.photos/id/30/250/250',
-            'https://picsum.photos/id/31/250/250',
-            'https://picsum.photos/id/32/250/250',
-            'https://picsum.photos/id/33/250/250'
+    <div class="container">
+        <form action="#" method="post">
+            <legend>Questions, Comments?</legend>
+                <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name"> 
+                <label for="mail">E-mail:</label>
+                    <input type="email" id="mail" name="user_email">
+                <label for="msg">Message:</label>
+                    <textarea id="mag" name="user_message"></textarea>
+            <div class="button"><button type="submit">Send your message</button></div>
+        </form>
+        
+        <ul>
+            <h3>Calgary, Canada</h3><br>
+            <li>1613 11 Ave. SW</li>
+            <li>Calgary, AB. T3C 0N3</li>
+            <li>Reception: 403-837-7400</li>
+            <li>Manager: John Doe</li>
+            <li>J.D@edu.sait.ca</li>
+            </ul>
+        <ul>
+            <h3>New York, USA</h3><br>
+            <li>20 West 34th St.</li>
+            <li>New York, USA 10118</li>
+            <li>Reception: 212-736-3100</li>
+            <li>Manager: Sally May</li>
+            <li>S.M@edu.sait.ca</li>
+        </ul>
+        <ul>
+            <h3>London, UK.</h3><br>
+            <li>Spur Road</li>
+            <li>London,GB SW1A 1AA</li>
+            <li>Reception:44 3031237300</li>
+            <li>Manager: Peter Pi</li>
+            <li>P.P@edu.sait.ca</li>
+        </ul>
+    </div>
+    
+    <script>
+        const button = document.querySelector('.btn');
+        const menu = document.querySelector('nav ul');
+    
+        function eventHandler() {
+          menu.classList.toggle('visible');
+        }
+        button.addEventListener('click', eventHandler);
+    </script>
 
-
-            'https://images.pexels.com/photos/2193300/pexels-photo-2193300.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
-            'https://images.pexels.com/photos/7004/pexels-photo.jpg?cs=srgb&dl=bavaria-castle-germany-landmark-7004.jpg&fm=jpg',
-            'https://images.pexels.com/photos/3038815/pexels-photo-3038815.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
-            'https://images.pexels.com/photos/1144276/pexels-photo-1144276.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
-            'https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
-            'https://images.pexels.com/photos/3763903/pexels-photo-3763903.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500'
-        https://www.pexels.com/photo/picture-of-eiffel-tower-338515/ -->
-
+    <footer>Copyright &copy 2020 Travel Experts</footer>
+</body> 
 
 </html>
-
 
 
 
