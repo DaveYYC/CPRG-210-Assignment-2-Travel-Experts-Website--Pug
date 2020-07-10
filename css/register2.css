@@ -45,14 +45,6 @@ nav ul li {
     list-style: none;
 }
 
-nav ul {
-    display: none;
-}
-
-.visible {
-    display: block;
-}
-
 nav a {
     font-weight: bold;
     text-decoration: none;
@@ -170,25 +162,6 @@ footer {
 	background: coral
 } 
     
-/* ---- Necessary for hidden menu on mobile view ---- */
-
-@media (orientation: landscape) {
-    
-    nav ul {
-      
-      display: flex;
-    }
-
-    nav ul li {
-      flex: auto;
-    }
-
-    nav button {
-      display: none;
-    }
-  }
-
-
 
 
 

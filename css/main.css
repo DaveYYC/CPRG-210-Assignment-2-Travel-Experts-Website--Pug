@@ -115,11 +115,10 @@ header p {
     background-color: coral;
 }
 
-
 table {
-    /* display: flex;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: center; */
+    justify-content: center;
     height: 500px;
     max-width:800px;
     margin: auto;
@@ -128,22 +127,63 @@ table {
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
-
-/* .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-    max-width:800px;
-    margin: auto;
-
-    font-size: 20px;
-    font-family: 'Montserrat Alternates', sans-serif;
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    grid-gap: 2rem;
+    margin: 2rem;
   }
-
-  .gallery img {
-    margin: 0.5em;
-  } */
+  
+  /* --------------------------------demo purposes only -----------------------------------------------*/
+  
+  * {
+    font-family: "Poppins", sans-serif;
+  }
+  .card {
+    height: 215px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  
+  h3 {
+    color: white;
+    font-size: 24px;
+    margin: 20px 0 0 20px;
+  
+  }
+  
+  p {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    align-self: end;
+    margin: 0 0 20px 20px;
+    letter-spacing: 0.5px;
+  }
+  
+  img {
+    position: absolute;
+    top: 0;
+    height: 110%;
+    width: 100%;
+    z-index: -1;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  
+  .card:hover {
+    transform: scale(1.035, 1.035);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card:hover img {
+    transform: translateY(-10px);
+  }
+  
 
 /* ---- Comment Form /Contact Us Section ---- */
 .container {
@@ -239,6 +279,7 @@ button {
 
 /* ---- Footer ---- */
 footer {
+    width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
     
