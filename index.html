@@ -31,14 +31,59 @@
     <div id="banner_1">
         <p>View our Exciting Travel Destinations Below</p>
     </div>
-           
-    <section class="gallery">
-            
-        <!-- <img src="https://images.pexels.com/photos/2193300/pexels-photo-2193300.jpeg">  -->
+        
+    <!-- finally found a YouTube video on how to add script data in here as a table -->
 
-    </section>
+    <table id="table">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+    </table>
 
     <script>
+
+    /*is it possible to nest images and other links into an array???*/
+
+            const array = [ 
+                ["Australia","Image", "link"],
+                ["Germany","Image", "link"],
+                ["Hong-Kong","Image","link"],
+                ["Italy","Image","link"],
+                ["Portugal","Image","link"],
+                ["Greece","Image","link"]
+            ],
+
+            table =document.getElementById("table");
+
+    /* not a forEach loop but getting closer to figuring it out...*/
+
+                for (let i = 0; i < array.length; i++) 
+
+            {
+                let newRow = table.insertRow(table.length);
+
+                for (let j = 0; j < array[i].length; j++)
+                {
+                    let cell = newRow.insertCell(j);
+
+                        cell.innerHTML = array[i][j];
+                }
+            };
+
+</script>
+
+
+<!-- previous idea: but place text in a straight line only -->
+
+    <!-- <script>
         const imgList = ["Australia", "Germany", "Hong-Kong", "Italy", "Portugal", "Paris"]; 
 
         let imgTemplate = ''; 
@@ -47,10 +92,10 @@
 
         imgList.forEach(function(item){
             imgTemplate += item;
-            console.log(item);
+                console.log(item);
         });
-        gallery.innerHTML = imgTemplate;
-    </script>
+            gallery.innerHTML = imgTemplate;
+    </script> -->
                 
     <div id="contact">Contact Us</div>
 
@@ -112,6 +157,7 @@
 
 
 
+<!-- <img src="https://images.pexels.com/photos/2193300/pexels-photo-2193300.jpeg">  -->
 
 
 
