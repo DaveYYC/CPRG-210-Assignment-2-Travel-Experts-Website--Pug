@@ -109,7 +109,7 @@ header p {
     text-align: center;
     
     font-size: 45px;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Roboto', sans-serif;
     
     color: white;
     background-color: coral;
@@ -124,22 +124,17 @@ table {
     margin: auto;
 
     font-size: 20px;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-.container {
+/* .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
     grid-gap: 2rem;
     margin: 2rem;
-  }
+  } */
   
-  /* --------------------------------demo purposes only -----------------------------------------------*/
-  
-  * {
-    font-family: "Poppins", sans-serif;
-  }
-  .card {
+  /* .card {
     height: 215px;
     position: relative;
     overflow: hidden;
@@ -183,7 +178,7 @@ table {
   .card:hover img {
     transform: translateY(-10px);
   }
-  
+   */
 
 /* ---- Comment Form /Contact Us Section ---- */
 .container {
@@ -197,7 +192,7 @@ table {
     font-family: 'Roboto', sans-serif;
 
     background-color: rgba(122, 109, 105, 0.322); 
-}
+} 
 
 /* ---- Comment Form ---- */
 form {
