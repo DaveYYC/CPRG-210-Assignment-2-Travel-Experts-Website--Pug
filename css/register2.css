@@ -52,13 +52,6 @@ nav ul {
 .visible {
     display: block;
 }
-nav ul li {
-    flex: auto;
-}
-
-nav button {
-    display: none;
-}
 
 nav a {
     font-weight: bold;
