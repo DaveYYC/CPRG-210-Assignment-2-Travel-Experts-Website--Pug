@@ -16,8 +16,8 @@ const gallery = document.querySelector('.gallery');
 
 imgList.forEach(function(item){
 
-    imgTemplate += `<a href="${item[3]}"><img src="https://picsum.photos/id/${item[0]}/225/225">
-    Click for information about${item[1]}<alt="${item[2]}">`;
+    imgTemplate += `<a href="${item[3]}"><img src="https://picsum.photos/id/${item[0]}/250/250">
+    Select for information about${item[1]}<alt="${item[2]}">`;
     
     // console.log(imgTemplate);
 });
