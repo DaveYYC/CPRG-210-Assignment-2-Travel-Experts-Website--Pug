@@ -18,6 +18,8 @@ body {
     letter-spacing: 5px;
 
     font-variant: small-caps;
+
+    background-color: rgba(122, 109, 105, 0.322); 
 }
 
 /* ---- Navigation bar / Header ---- */
@@ -42,7 +44,7 @@ nav h1 {
 }
 
 nav ul li {
-    padding: 10px 25px 10px 0px;
+    padding: 25px 0px 10px 20px;
     list-style: none;
 }
  
@@ -74,6 +76,7 @@ nav a:active {
 }
 
 /* ---- Hero Section ---- */
+
 header {
     min-height: 850px;
 
@@ -104,83 +107,42 @@ header p {
 }
 
 /* ---- Gallery Section ---- */
+
 #banner_1 {
     padding: 25px 0px 25px 0px;
     text-align: center;
     
     font-size: 45px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     
     color: white;
     background-color: coral;
 }
 
-table {
+.gallery {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 500px;
-    max-width:800px;
+    justify-content: space-evenly;
+    text-align: center;
+    max-width: 1000px;
     margin: auto;
-
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+    padding-bottom: 10px;
+  }
+  
+.gallery img {
+    margin: 2em; 
 }
 
-/* .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
-    grid-gap: 2rem;
-    margin: 2rem;
-  } */
-  
-  /* .card {
-    height: 215px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-  }
-  
-  h3 {
-    color: white;
-    font-size: 24px;
-    margin: 20px 0 0 20px;
-  
-  }
-  
-  p {
-    color: white;
-    font-weight: 400;
-    font-size: 16px;
-    align-self: end;
-    margin: 0 0 20px 20px;
-    letter-spacing: 0.5px;
-  }
-  
-  img {
-    position: absolute;
-    top: 0;
-    height: 110%;
-    width: 100%;
-    z-index: -1;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-  }
-  
-  .card:hover {
-    transform: scale(1.035, 1.035);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-  }
-  
-  .card:hover img {
-    transform: translateY(-10px);
-  }
-   */
+.gallery a {
+    text-decoration: none;
+
+    font-size: 14px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    
+    color: black;
+}
 
 /* ---- Comment Form /Contact Us Section ---- */
+
 .container {
     display: flex;
 	justify-content: space-around;
@@ -195,6 +157,7 @@ table {
 } 
 
 /* ---- Comment Form ---- */
+
 form {
     margin: 5px;
     width: 400px;
@@ -246,6 +209,7 @@ button {
 }
 
 /* ---- Contact US Info ---- */
+
 .container ul {
     padding: 10px;
     list-style: none;
@@ -273,6 +237,7 @@ button {
 }
 
 /* ---- Footer ---- */
+
 footer {
     width: 100%;
     padding-top: 20px;
@@ -286,21 +251,33 @@ footer {
 	background: teal
 } 
 
-/* ---- Necessary for hidden menu on mobile view ---- */
+/* ---- Necessary for hidden menu toggle on mobile view ---- */
 
 @media (orientation: landscape) {
     
-    nav ul {
-      
-      display: flex;
+nav ul {
+    display: flex;
+}
+nav ul li {
+    flex: auto;
+}
+nav button {
+    display: none;
     }
+}
 
-    nav ul li {
-      flex: auto;
-    }
+@media (orientation: portrait) {
 
-    nav button {
-      display: none;
-    }
-  }
+.gallery {
+flex-wrap: wrap;
 
+width: 250px;
+}
+
+
+
+
+
+
+
+}

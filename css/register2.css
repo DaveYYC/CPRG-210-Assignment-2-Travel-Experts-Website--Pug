@@ -30,7 +30,7 @@ nav {
     text-align: center;
     overflow: hidden;
     
-    font-size: 28px;
+    font-size: 35px;
     text-transform: uppercase;
 
     color: white;
@@ -41,7 +41,7 @@ nav {
 nav ul li {
     padding: 15px 20px 5px 0px;
 
-    font-size: 13px;
+    font-size: 16px;
     list-style: none;
 }
 
@@ -66,7 +66,7 @@ nav a:active {
 
 /* ---- Registration Form ---- */
 .register {
-    height: 550px;
+    height: 535px;
 
     display:flex;
     justify-content: center;
