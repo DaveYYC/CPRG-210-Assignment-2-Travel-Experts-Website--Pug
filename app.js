@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 // Endpoint handler for the home page
-app.get('/', function(request, response){
+app.get('/index.html', function(request, response){
   response.render('index.pug',{});
 })
 
