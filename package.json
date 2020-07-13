@@ -18,6 +18,10 @@
   "homepage": "https://github.com/DaveYYC/assignment2#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "install": "^0.13.0",
     "pug": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
