@@ -1,58 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/register.css">
-    <title>Travel Experts - Register</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/register.css">
+  <title>Travel Experts - Register</title>
 </head>
 
 <body> 
-    <nav>
-        <a href="index.html"><img src="images/travel_logo.png" alt="travel experts logo" width="120" height="120"></a>
+  <nav>
+    <a href="index.html"><img src="images/travel_logo.png" alt="travel experts logo" width="120" height="120"></a>
 
-        <a href="index.html"><h1>Travel Experts</h1></a>
+    <a href="index.html"><h1>Travel Experts</h1></a>
 
-        <ul>
-            <li><a href="login.html">LOGIN</a></li>
-            <li><a class="current" href="register.html">SIGN UP</a></li>
-            <li><a href= "/assignment_2/index.html#banner_1">Destinations</a></li>
-            <li><a href="/assignment_2/index.html#contact">Contact Us</a></li>
-        </ul>  
-    </nav>
+    <ul>
+      <li><a href="login.html">LOGIN</a></li>
+      <li><a class="current" href="register.html">SIGN UP</a></li>
+      <li><a href= "/assignment_2/index.html#banner_1">Gallery</a></li>
+      <li><a href="/assignment_2/index.html#contact">Contact Us</a></li>
+    </ul>  
+  </nav>
 
-    <div class="register">
-        <form id = "register" action="#" method="post">
-            <legend>Registration</legend>
-                <p>Mandatory fields marked with *</p>
-                    <label for="f_name">First Name:</label>
-                        <span class="required"> * </span>
-                            <input type="text" id="f_name" name="user_f_name" required>   
-                    <label for="l_name">Last Name:</label>
-                        <span class="required"> * </span>
-                            <input type="text" id="l_name" name="user_l_name" required>
-                    <label for="mail">E-mail:</label>
-                        <span class="required"> * </span>
-                            <input type="email" id="mail" name="user_email" required>
-                    <label for="password">Create Password:</label>
-                        <span class="required"> * </span>
-                            <input type="password" pattern=".{8,}" id="pwd" name="pwd" required title="8 characters minimum">
-                    <label for="conf_pwd">Confirm Password:</label>
-                        <span class="required"> * </span>
-                            <input type="password" pattern=".{8,}" id="conf_pwd" name="conf_pwd" required title="8 characters minimum">
-                            <p>Password minimum 8 characters</p>
-            <legend>Select to subscribe to our newsletter:</legend>
-                <input type="checkbox" id="sub_yes" name="sub_yes" value="sub_yes">
-                    <button type="submit">SUBMIT</button>
-        </form>
-    </div>
+  <div class="register">
+    <form id = "register" action="https://formspree.io/meqrpezq" method="post">
+      <legend>Registration</legend>
+        <p>Mandatory fields marked with *</p>
+          <label for="f_name">First Name:</label>
+            <span class="required"> * </span>
+              <input type="text" id="f_name" name="user_f_name" required>   
+          <label for="l_name">Last Name:</label>
+            <span class="required"> * </span>
+              <input type="text" id="l_name" name="user_l_name" required>
+          <label for="mail">E-mail:</label>
+            <span class="required"> * </span>
+              <input type="email" id="mail" name="user_email" required>
+          <label for="password">Create Password:</label>
+            <span class="required"> * </span>
+              <input type="password" pattern=".{8,}" id="pwd" name="pwd" required title="8 characters minimum">
+          <label for="conf_pwd">Confirm Password:</label>
+            <span class="required"> * </span>
+              <input type="password" pattern=".{8,}" id="conf_pwd" name="conf_pwd" required title="8 characters minimum">
+        <p>Password minimum 8 characters</p>
+      <legend>Select to subscribe to our newsletter:</legend>
+        <input type="checkbox" id="sub_yes" name="sub_yes" value="sub_yes">
+          <button type="submit">SUBMIT</button>
+    </form>
+  </div>
 
-    <script src="main.js"></script> 
+  <script src="main.js"></script> 
 
-    <footer>Copyright &copy 2020 Travel Experts</footer>
+  <footer>Copyright &copy 2020 Travel Experts</footer>
 </body> 
 
 </html>
-    
-    
-    
+
+
