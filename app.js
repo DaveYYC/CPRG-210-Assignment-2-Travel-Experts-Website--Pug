@@ -1,6 +1,8 @@
 // import modules
 const path = require('path');
 const express = require('express');
+// const destinations = require('./destinations');
+
 
 // create express app
 const app = express();
@@ -27,6 +29,20 @@ app.get('/register', function(request, response){
 });
 
 
+/*----------------------------------------------------------------------------------*/
+app.get('/:id', function(request, response){
+  
+  const oneDestination = destinations.find(function(item) {
+
+    return item.id == request.params.id;
+    
+});
+
+  response.render('1033',oneDestination);
+});
+  
+/*-------------------------------------------------------------------------------------*/
+
 // if no, send a 404 error as a response to the browser
 app.use(function(req, res, next) {
   res.status(404);
@@ -39,11 +55,3 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, function(){
   console.log(`Listening on port ${PORT}`);
 });
-
-const moment = require('moment'); //require moment
-moment().format();
-
-
-
-
-

@@ -76,13 +76,12 @@ nav a:hover {
   background-image: linear-gradient(teal, lightblue);
 } 
 
-nav li:hover {
-  background-image: linear-gradient(teal, lightblue);
-} 
-
 nav a:active {
   background-image: linear-gradient(teal, lightblue);
 }
+/* #current  {
+  background-image: linear-gradient(rebeccapurple, skyblue);
+} */
 
 /* ---- Hero Section ---- */
 
@@ -387,14 +386,11 @@ span.required {
   color: red;
 }
 
-/*---------------------------------------------------------------------*/
-
 /* ---- Footer ---- */
 
 footer {
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-top: 10px;
   overflow: hidden;
 
   text-align: center;

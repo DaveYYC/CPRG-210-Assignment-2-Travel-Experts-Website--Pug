@@ -1,9 +1,6 @@
 
 
 
-
-
-
 /* Array of items for the gallery section of the webpage */
 
 const imgList = [
