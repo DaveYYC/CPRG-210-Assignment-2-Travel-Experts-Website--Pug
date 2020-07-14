@@ -6,6 +6,8 @@ const express = require('express');
 const app = express();
 app.set('view engine', 'pug');
 
+app.locals.moment = require('moment');
+
 // automatically check if requested file is found in /public
 // if yes, return that file as a response to the browser
 app.use(express.static(path.join(__dirname, 'public')));
@@ -37,6 +39,9 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, function(){
   console.log(`Listening on port ${PORT}`);
 });
+
+const moment = require('moment'); //require moment
+moment().format();
 
 
 

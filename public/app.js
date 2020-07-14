@@ -2,6 +2,8 @@
 // import modules
 const path = require('path');
 const express = require('express');
+// const gallery = require('./destinations.js');
+
 
 // create express app
 const app = express();
@@ -21,6 +23,9 @@ app.get('/login', function(request, response){
   response.render('login.pug',{});
 })
 
+app.get('/register', function(request, response){
+  response.render('register',{});
+});
 
 // if no, send a 404 error as a response to the browser
 app.use(function(req, res, next) {

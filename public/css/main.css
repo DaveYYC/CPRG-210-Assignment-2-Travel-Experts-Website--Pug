@@ -35,7 +35,6 @@ nav {
   text-align: center;
   overflow: hidden;
 
-  
   text-transform: uppercase;
   font-family: 'Montserrat Alternates', sans-serif;
 
@@ -43,9 +42,7 @@ nav {
   background-color: coral;
 }
 
-nav h1 {
-  font-size: 50px;
-}
+
 
 nav ul li {
   padding: 15px 20px 5px 0px;
@@ -59,8 +56,18 @@ nav ul li {
 nav a {
   font-weight: bold;
   text-decoration: none;
-
+  margin-left: 50px;
   color:white;
+}
+
+nav p {
+  font-weight: bold;
+  font-size: 45px;
+  margin-right: 20px;
+}
+
+nav img {
+  margin-left: 15px;
 }
 
 /* Linear gradients to show when the cursor hovers the link  */
@@ -172,7 +179,7 @@ header p:hover {
 
 /* ---- Comment Form ---- */
 
-form {
+.container form {
   margin: 5px;
   width: 400px;
 
@@ -182,14 +189,14 @@ form {
   text-align: center;
 }
 
-legend {
+.container legend {
   margin-top: 5px;
   font-size: 25px;
 
   text-align: center;
 }
 
-label {
+.container label {
   margin: 5px;
   width: 130px;
 
@@ -200,12 +207,12 @@ label {
   font-size: 18px;
 }
 
-input, textarea { 
+.container input, textarea { 
   width: 200px;
   border: 1 px solid #999;
 } 
 
-textarea {
+.container textarea {
   height: 5em;
   vertical-align: top;
   overflow: auto; 
@@ -215,15 +222,17 @@ input.error {
   border-color: red;
 }
 
-.button {
-  margin: 10px; 
-}
-
 button {
+  text-align: center;
   padding: 5px 5px 5px 5px;
+  margin: 10px;
 
   color:white;
-  background-color: teal;
+  background-color: coral;
+}
+
+.register button {
+  margin-right: 135px;
 }
 
 /* ---- Contact US Information Section ---- */
@@ -254,12 +263,139 @@ button {
   background: teal
 }
 
+/* ---------login form section-------------*/
+.login {
+  height: 70vh;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login form {
+  width: 450px;
+  margin-top: 250px;
+  margin-bottom: 240px;
+
+  padding: 1.5em;
+  border-radius: 1em;
+  border: 5px solid teal;
+
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+
+  color: black;
+  background-color: rgba(122, 109, 105, 0.13); 
+}
+
+.login legend {
+  font-size: 25px;
+  text-align: center;
+}
+
+.login label {
+  margin: 10px;
+  display: inline-block;
+
+  padding-top: 15px;
+  text-align: right;
+
+  font-size: 18px;
+}
+ 
+.login input, textarea { 
+  width:  160px; 
+  height: 25px;
+  padding-bottom: 10px;
+
+  border: 1 px solid #999;
+} 
+
+.login p {
+  margin-top: 20px;
+  text-align: center;
+
+  font-size: 12px;
+}
+
+#mail {
+  width: 200px;
+}
+
+.required {
+  color: red;
+}
+
+/* ---- Registration Form ---- */
+
+.register {
+  height: 525px;
+
+  display:flex;
+  justify-content: center;
+  text-align: right;
+
+  overflow: hidden;
+}
+
+.register form {
+  width: 450px;
+  border-radius: 1em;
+  border: 5px solid teal;
+
+  font-family: 'Roboto', sans-serif;
+
+  color: black;
+  background-color: rgba(122, 109, 105, 0.13); 
+}
+
+.register legend {
+  padding-top: 15px;
+  padding-bottom: 10px;
+
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.register label {
+  margin: 10px;
+  display: inline-block;
+
+  padding-top: 5px;
+  text-align: right;
+
+  font-size: 16px;
+}
+
+.register p {
+  font-size: 12px;
+  padding-top: 5px;
+  text-align: center;
+  
+}
+
+.register input, textarea { 
+  width:  155px; 
+  height: 25px;
+  margin-right: 5px;
+    
+  border: 1 px solid #999;
+} 
+
+span.required {
+  color: red;
+}
+
+/*---------------------------------------------------------------------*/
+
 /* ---- Footer ---- */
 
 footer {
-  width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-top: 10px;
+  overflow: hidden;
 
   text-align: center;
   font-size: 20px;
@@ -276,6 +412,7 @@ footer {
 
   .gallery {
     flex-wrap: wrap;
+    
     width: 250px;
   }
 }

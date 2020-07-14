@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 include includes/head.pug
-  link(rel='stylesheet' type='text/css' href='css/login.css')
+include includes/css.pug
   title Travel Experts - Login
-  include includes/nav.pug
 .login
   form#login(action='https://formspree.io/meqrpezq' method='post')
     legend LOGIN
@@ -14,7 +13,6 @@ include includes/head.pug
     span.required  * 
     input#pwd(type='password' pattern='.{8,}' name='pwd' required='' title='8 characters minimum')
     p Password minimum 8 characters
-    .button
       button(type='submit') SUBMIT
 script(src='main.js')
 include includes/footer.pug
