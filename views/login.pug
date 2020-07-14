@@ -1,29 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-
-head
-  meta(charset='UTF-8')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+include includes/head.pug
   link(rel='stylesheet' type='text/css' href='css/login.css')
   title Travel Experts - Login
-nav
-  a(href='/')
-    img(src='images/travel_logo.png' alt='travel experts logo' width='125' height='125')
-  a(href='/')
-    h1 Travel Experts
-  ul
-    li
-      a.current(href='/login') LOGIN
-    li
-      a(href='/register') SIGN UP
-    li
-      a(href='/#banner_1') Gallery
-    li
-      a(href='/#contact') Contact Us
+  include includes/nav.pug
 .login
   form#login(action='https://formspree.io/meqrpezq' method='post')
     legend LOGIN
-    br
     p Mandatory fields marked with *
     label(for='mail') E-mail:
     span.required  * 
@@ -35,6 +17,7 @@ nav
     .button
       button(type='submit') SUBMIT
 script(src='main.js')
-footer Copyright &amp;copy 2020 Travel Experts
+include includes/footer.pug
+
 
 

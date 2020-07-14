@@ -1,26 +1,8 @@
 <!DOCTYPE html>
-html(lang="en")
-title=title
-head
-  meta(charset='UTF-8')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  link(rel='stylesheet' type='text/css' href='css/main.css')
+
+ include includes/head.pug
   title Travel Experts
-nav
-  a(href='/') 
-    img(src='images/travel_logo.png' alt='Travel Experts company logo' width='125' height='125')
-  a(href='/') 
-    h1 Travel Experts
-  button.btn Menu Toggle
-  ul
-    li
-      a(href='/login') Login
-    li
-      a(href='/register') Sign Up
-    li
-      a(href='/#banner_1') Gallery
-    li
-      a(href='/#contact') Contact Us
+  include includes/nav.pug
 header
   h1 Access our Specials and Discounts
   a(href='/register') 
@@ -42,7 +24,6 @@ header
       button(type='submit') Send your message
   ul
     h3 Calgary, Canada
-    br
     li 1613 11 Ave. SW
     li Calgary, AB. T3C 0N3
     li Reception: 403-837-7400
@@ -50,7 +31,6 @@ header
     li David.Hahner@edu.sait.ca
   ul
     h3 New York, USA
-    br
     li 20 West 34th St.
     li New York, USA 10118
     li Reception: 212-736-3100
@@ -58,12 +38,10 @@ header
     li S.M@edu.sait.ca
   ul
     h3 London, UK.
-    br
     li Spur Road
     li London,GB SW1A 1AA
     li Reception:44 3031237300
     li Manager: Peter Pint
     li P.P@edu.sait.ca
 script(src='main.js')
-footer Copyright &amp;copy 2020 Travel Experts
-
+include includes/footer.pug

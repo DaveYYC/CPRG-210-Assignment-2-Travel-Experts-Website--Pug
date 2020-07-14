@@ -32,9 +32,10 @@ nav {
 
   align-items: center;
   justify-content: space-evenly;
+  text-align: center;
   overflow: hidden;
 
-  text-align: center;
+  
   text-transform: uppercase;
   font-family: 'Montserrat Alternates', sans-serif;
 
@@ -43,32 +44,26 @@ nav {
 }
 
 nav h1 {
-  font-size: 40px;
+  font-size: 50px;
 }
 
 nav ul li {
-  padding: 25px 0px 10px 20px;
+  padding: 15px 20px 5px 0px;
+
+  font-size: 16px;
   list-style: none;
-}
-
-/* hidden menu toggle button for  smaller view ports */
-
-nav ul {
-  display: none;
-}
-
-.visible {
-  display: block;
 }
 
 /* navigation links, linear gradients when the cursor hovers */
 
 nav a {
-  font-size: 16px;
+  font-weight: bold;
   text-decoration: none;
 
   color:white;
 }
+
+/* Linear gradients to show when the cursor hovers the link  */
 
 nav a:hover {
   background-image: linear-gradient(teal, lightblue);
@@ -274,20 +269,6 @@ footer {
   background: coral
 } 
 
-/* ---- Necessary for hidden menu toggle on mobile view ---- */
-
-@media (orientation: landscape) {
-
-  nav ul {
-    display: flex;
-  }
-  nav ul li {
-    flex: auto;
-  }
-  nav button {
-    display: none;
-  }
-}
 
 /* ---- Necessary to view the gallery with a smaller viewport */
 

@@ -1,24 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-head
-  meta(charset='UTF-8')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  include includes/head.pug
   link(rel='stylesheet' type='text/css' href='css/register.css')
   title Travel Experts - Register
-nav
-  a(href='/')
-    img(src='images/travel_logo.png' alt='travel experts logo' width='120' height='120')
-  a(href='/')
-    h1 Travel Experts
-  ul
-    li
-      a(href='/login') LOGIN
-    li
-      a.current(href='/register') SIGN UP
-    li
-      a(href='/#banner_1') Gallery
-    li
-      a(href='/#contact') Contact Us
+  include includes/nav.pug
 .register
   form#register(action='https://formspree.io/meqrpezq' method='post')
     legend Registration
@@ -43,4 +27,5 @@ nav
     input#sub_yes(type='checkbox' name='sub_yes' value='sub_yes')
     button(type='submit') SUBMIT
 script(src='main.js')
-footer Copyright &amp;copy 2020 Travel Experts
+include includes/footer.pug
+
