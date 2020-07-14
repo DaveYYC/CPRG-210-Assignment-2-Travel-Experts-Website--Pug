@@ -1,47 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/login.css">
-  <title>Travel Experts - Login</title>
-</head>
 
-<body>
-  <nav>
-    <a href="index.pug"><img src="images/travel_logo.png" alt="travel experts logo" width="125" height="125"></a>
-
-    <a href="index.pug"><h1>Travel Experts</h1></a>
-
-    <ul>
-      <li><a class="current" href="login.pug">LOGIN</a></li>
-      <li><a href="register.pug">SIGN UP</a></li>
-      <li><a href= "/assignment_2/index.pug#banner_1">Gallery</a></li>
-      <li><a href="/assignment_2/index.pug#contact">Contact Us</a></li>
-    </ul>
-  </nav>
-
-  <div class="login">
-    <form id="login"  action="https://formspree.io/meqrpezq" method="post">
-      <legend>LOGIN</legend><br>
-        <p>Mandatory fields marked with *</p>
-          <label for="mail">E-mail:</label> 
-            <span class="required"> * </span>
-              <input type="email" id="mail" name="user_email" required>    
-          <label for="pwd">Password:</label> 
-            <span class="required"> * </span>
-              <input type="password" pattern=".{8,}" id="pwd" name="pwd" required title="8 characters minimum">
-        <p>Password minimum 8 characters</p>
-      <div class="button"><button type="submit">SUBMIT</button></div>
-    </form>
-  </div>
-
-  <script src="main.js"></script> 
-
-  <footer>Copyright &copy 2020 Travel Experts</footer>
-</body> 
-
-</html>
-
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' type='text/css' href='css/login.css')
+  title Travel Experts - Login
+nav
+  a(href='/')
+    img(src='images/travel_logo.png' alt='travel experts logo' width='125' height='125')
+  a(href='/')
+    h1 Travel Experts
+  ul
+    li
+      a.current(href='/login') LOGIN
+    li
+      a(href='/register') SIGN UP
+    li
+      a(href='/#banner_1') Gallery
+    li
+      a(href='/#contact') Contact Us
+.login
+  form#login(action='https://formspree.io/meqrpezq' method='post')
+    legend LOGIN
+    br
+    p Mandatory fields marked with *
+    label(for='mail') E-mail:
+    span.required  * 
+    input#mail(type='email' name='user_email' required='')
+    label(for='pwd') Password:
+    span.required  * 
+    input#pwd(type='password' pattern='.{8,}' name='pwd' required='' title='8 characters minimum')
+    p Password minimum 8 characters
+    .button
+      button(type='submit') SUBMIT
+script(src='main.js')
+footer Copyright &amp;copy 2020 Travel Experts
 
 

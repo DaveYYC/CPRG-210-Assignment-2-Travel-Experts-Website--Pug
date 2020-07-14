@@ -17,6 +17,10 @@ app.get('/', function(request, response){
   response.render('index.pug',{});
 })
 
+app.get('/login', function(request, response){
+  response.render('login.pug',{});
+})
+
 
 // if no, send a 404 error as a response to the browser
 app.use(function(req, res, next) {

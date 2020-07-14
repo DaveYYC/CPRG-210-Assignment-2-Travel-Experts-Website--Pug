@@ -13,8 +13,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Endpoint handler for the home page
 app.get('/', function(request, response){
-  response.render('index.pug',{});
-})
+  response.render('index',{});
+});
+
+app.get('/login', function(request, response){
+  response.render('login',{});
+});
+
+app.get('/register', function(request, response){
+  response.render('register',{});
+});
 
 
 // if no, send a 404 error as a response to the browser
